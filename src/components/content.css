@@ -1,27 +1,16 @@
-.hero {
-  position: relative;
-  padding: 17vh;
+.hero-gradient {
+  height: 50vh;
+  background: linear-gradient(270deg, #2c0e6f, #297286, #47b410, #10b4b2);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 20s ease infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 43%, 0 69%);
 }
 
 .hero-tag-line {
-  position: absolute;
-  left: 55%;
-  top: 25%;
-}
-.hero-text {
-  padding-top: 1rem;
-  max-width: fit-content;
-}
-
-.hero-gradient {
-  height: 50vh;
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(218deg, #58a8ff, #7bfeb1, #efc069, #e567a0);
-  background-size: 200% 200%;
-  clip-path: polygon(0 0, 100% 0, 100% 43%, 0 69%);
-
-  animation: AnimationName 4s ease infinite;
+  mix-blend-mode: multiply;
 }
 
 @keyframes AnimationName {

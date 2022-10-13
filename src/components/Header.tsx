@@ -9,7 +9,7 @@ export default class Header extends Component<Props, State> {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-lg px-3 sticky-top navbar-dark bg-primary">
+      <nav className="navbar navbar-expand-lg px-3 navbar-dark">
         <a className="navbar-brand" href="#">
           <img
             className="d-inline-block align-top"
@@ -20,23 +20,6 @@ export default class Header extends Component<Props, State> {
           ></img>
         </a>
         <span className="h4 text-white">Go Fishing Today?</span>
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <a className="nav-link active" href="#">
-              Home
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link active" href="#">
-              About
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link active" href="#">
-              More Projects
-            </a>
-          </li>
-        </ul>
       </nav>
     );
   }

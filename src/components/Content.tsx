@@ -12,12 +12,12 @@ import type { forecastType } from "../GetData";
 
 type CardWrapperProps = {};
 
-const colWidth: string = "col-md";
+const colWidth: string = "col";
 
 const CardWrapper = (props: CardWrapperProps) => {
   return (
     <div className="container justify-content-center">
-      <Row className="">
+      <Row>
         <Col className={colWidth}>
           <Card<forecastType>
             cardTitle="Weather Forecast"
@@ -42,6 +42,7 @@ const CardWrapper = (props: CardWrapperProps) => {
             cardImage="https://source.unsplash.com/dtOTQYmTEs0/640"
           ></Card>
         </Col>
+        <div className="w-100 d-sm-none d-block"></div>
         <Col className={colWidth}>
           <SolunarCard<solunarType>
             cardTitle="Solunar Forecast"
@@ -90,7 +91,7 @@ const Card = <T extends forecastType>(props: CardProps<T>) => {
               key={area}
             >
               <h6>{area}</h6>
-              <span className="badge badge-pill badge-primary bg-primary">
+              <span className="mx-2 badge badge-pill badge-primary bg-primary">
                 {forecast}
               </span>
             </li>
@@ -153,18 +154,12 @@ type ContentProps = {};
 const Content = (props: ContentProps) => {
   return (
     <div className="">
-      <div className="hero">
-        <div className="hero-gradient"></div>
-        <h1 className="hero-tag-line">
-          A weather dashboard tailored for fishing purposes.
-          <h5 className="hero-text text-muted">
-            Find useful forecasts for fishing such as - weather, wind-speed,
-            UV-Index and Solunar forecast. These forecasts are based on my
-            personal experience and is what I look at before I decide on a
-            fishing trip. All data is based in Singapore and divided into East,
-            West, Central, North and South.
-          </h5>
-        </h1>
+      <div className="container-fluid px-0">
+        <div className="hero-gradient">
+          <h1 className="pt-4 px-4 display-3 hero-tag-line">
+            A weather dashboard tailored for fishing
+          </h1>
+        </div>
       </div>
       <CardWrapper></CardWrapper>
       <div className="container pt-4">

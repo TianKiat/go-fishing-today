@@ -9,9 +9,12 @@ export default class Footer extends Component<Props, State> {
 
   render() {
     return (
-      <div className="navbar navbar-expand-lg px-3 navbar-dark bg-primary fixed-bottom justify-content-center">
-        <span className="navbar-text mr-2">© 2022 Ng Tian Kiat</span>
-        <small className="navbar-text mr-auto">
+      <div className="navbar navbar-expand-lg px-3 navbar-dark justify-content-center">
+        <small className="navbar-text mx-2">© 2022 Ng Tian Kiat </small>
+        <small className="navbar-text mx-2">
+          Contact me: ngtiankiat97@gmail.com
+        </small>
+        <small className="navbar-text mx-2">
           All art assets belong to their original creators
         </small>
       </div>
