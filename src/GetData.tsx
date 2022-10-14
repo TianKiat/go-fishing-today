@@ -105,7 +105,7 @@ const GetUVIndexData = async () => {
   const response = await fetch(api_call);
   const myJson = await response.json(); //extract JSON from the http response
   // do something with myJson
-  const reading: int = myJson.items[0].index[0].value;
+  const reading: number = myJson.items[0].index[0].value;
   // console.log(myJson);
   let uvIndex: string = "Low";
   if (reading >= 3) uvIndex = "Moderate";
