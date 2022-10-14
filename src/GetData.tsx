@@ -105,10 +105,14 @@ const GetUVIndexData = async () => {
   const response = await fetch(api_call);
   const myJson = await response.json(); //extract JSON from the http response
   // do something with myJson
-  const reading = myJson.items[0].index[0];
+  const reading: int = myJson.items[0].index[0].value;
   // console.log(myJson);
-
-  return [{ area: "Singapore", forecast: reading.value }];
+  let uvIndex: string = "Low";
+  if (reading >= 3) uvIndex = "Moderate";
+  else if (reading >= 6) uvIndex = "High";
+  else if (reading >= 8) uvIndex = "Very High";
+  else if (reading >= 11) uvIndex = "Extreme";
+  return [{ area: "Singapore", forecast: uvIndex }];
 };
 
 const GetSolunarData = async () => {
