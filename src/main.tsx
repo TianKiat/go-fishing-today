@@ -10,9 +10,3 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <App />
   </React.StrictMode>
 );
-
-ReactDOM.createRoot(document.getElementById("footer") as HTMLElement).render(
-  <React.StrictMode>
-    <Footer />
-  </React.StrictMode>
-);
