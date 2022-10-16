@@ -156,13 +156,13 @@ const Content = (props: ContentProps) => {
     <div className="">
       <div className="container-fluid px-0">
         <div className="hero-gradient">
-          <h1 className="pt-4 px-4 display-3 hero-tag-line">
+          <h1 className="pt-4 px-4 display-3 hero-tag-line text-dark">
             A weather dashboard tailored for fishing
           </h1>
         </div>
       </div>
       <CardWrapper></CardWrapper>
-      <div className="container pt-4">
+      <div className="container d-flex flex-column my-4">
         <h3>
           About
           <small className=""> this project</small>

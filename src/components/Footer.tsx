@@ -9,7 +9,7 @@ export default class Footer extends Component<Props, State> {
 
   render() {
     return (
-      <div className="navbar navbar-expand-lg px-3 navbar-dark justify-content-center">
+      <div className="navbar navbar-expand-lg px-3 navbar-dark bg-primary justify-content-center">
         <small className="navbar-text mx-2">© 2022 Ng Tian Kiat </small>
         <small className="navbar-text mx-2">
           Contact me: ngtiankiat97@gmail.com

@@ -9,7 +9,7 @@ export default class Header extends Component<Props, State> {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-lg px-3 navbar-dark">
+      <nav className="navbar navbar-expand-lg px-3 bg-primary navbar-dark">
         <a className="navbar-brand" href="#">
           <img
             className="d-inline-block align-top"

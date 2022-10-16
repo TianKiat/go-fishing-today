@@ -10,7 +10,6 @@ function App() {
     <div className="App">
       <Header></Header>
       <Content></Content>
-      <Footer></Footer>
     </div>
   );
 }
